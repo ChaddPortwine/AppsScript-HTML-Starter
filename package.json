@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ChaddPortwine/AppsScript-HTML-Starter/issues"
   },
-  "homepage": "https://github.com/ChaddPortwine/AppsScript-HTML-Starter#readme"
+  "homepage": "https://github.com/ChaddPortwine/AppsScript-HTML-Starter#readme",
+  "devDependencies": {
+    "clasp": "^1.0.0"
+  }
 }
