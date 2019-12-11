@@ -58,14 +58,16 @@ Run `clasp deploy` to deploy your app to GCP. Within your project, a new version
 ```
 clasp deploy
 Created version 1.
-- AKfycbwqkMbn8WgzrNrYl2x7-7c-MB5Xb9pRQJYmLt0GQCRemBnNAh5LKSLl9xytuXIieQKLEQ @1.
+- AKf...LEQ @1.
 ```
 <h3>Open the Web Page</h3>
 
-Run `clasp open` to open you web page in a browser
+Run `clasp open --webapp` and select a deployment to open your web page in a browser.
 
 ```
-clasp open
+clasp open --webapp
 ? Open which deployment? (Use arrow keys)
-❯                               @HEAD - AKfycbym-zNorir1fcgPP5kmFJD849MfWx6riJpwoFUskh2S
+❯                               @HEAD - AKf...h2S
 ```
+
+If everything worked, you should see the <b>Hello Apps Script!</b> welcom page.
