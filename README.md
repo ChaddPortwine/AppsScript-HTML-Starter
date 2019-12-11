@@ -1,8 +1,12 @@
 # AppsScript-HTML-Starter
 <h2>Overview</h2>
+
 Create and Host a website with Apps Script. Use HTML, CSS, and JavaScript to design your pages. Use `clasp` to push your code to Google Drive and to deploy your site to Google Cloud Platform.
 
-This project uses npm to install clasp. The clasp CLI lets you work on Apps Scripts locally and then push and deploy changes from your Terminal or IDE.  
+This project uses npm to install clasp. The clasp CLI lets you work on Apps Scripts locally and then push and deploy changes from your Terminal or IDE.
+
+<h2>Instructions</h2>
+
 <h3>Clone the project and install clasp</h3>
 
 ```
@@ -49,7 +53,7 @@ Pushed 3 files.
 ```
 <h3>Deploy your app to Google Cloud Platform</h3>
 
-Run `clasp deploy` and select to deploy your app to GCP.
+Run `clasp deploy` to deploy your app to GCP. Within your project, a new version is created and then published.
 
 ```
 clasp deploy
