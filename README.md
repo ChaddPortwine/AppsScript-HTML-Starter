@@ -1,7 +1,7 @@
 # AppsScript-HTML-Starter
 <h2>Overview</h2>
 
-Create and Host a website with Apps Script. Use HTML, CSS, and JavaScript to design your pages. Use `clasp` to push your code to Google Drive and to deploy your site to Google Cloud Platform.
+Create and Host a website with Apps Script. Work locally using your favorite IDE. Use HTML, CSS, and JavaScript to design your pages. Use `clasp` to push your code files to Google Drive and to deploy your site to Google Cloud Platform.
 
 This project uses npm to install clasp. The clasp CLI lets you work on Apps Scripts locally and then push and deploy changes from your Terminal or IDE.
 
@@ -14,32 +14,24 @@ git clone git@github.com:ChaddPortwine/AppsScript-HTML-Starter
 cd AppsScript-HTML-Starter
 npm install
 ```
+<h3>Give clasp permission to use your account</h3>
+
+Run `clasp login`. This will open a browser where you must login and click through to grant clasp access to a few Google services. Once complete, return to your terminal or IDE.
+
+<h3>Enable the Google Apps Script API</h3>
+Open your Apps Script user settings.
+
+https://script.google.com/home/usersettings
+
+Turn on Google Apps Script API and return to your terminal or IDE.
 
 <h3>Create a new Apps Script Web App</h3>
 
 Use `clasp` to create a new blank Apps Script project. Set the type, title, and directory.
 ```
-clasp create --type webapp --title "AppsScript-HTML-Starter" --rootDir ./AppsScript-HTML-Starter
+clasp create --type webapp --title "AppsScript-HTML-Starter" --rootDir ./
 ```
 
-<h3>Update .clasp.json with the Project ID</h3>
-
-Run `clasp list` to find your new Apps Script project and its ID.
-
-```
-clasp list
-AppsScript-HTML…     – https://script.google.com/d/1RP...zGV/edit
-```
-
-See the shortened ID highlighed in <font color=red>red</font> below. Copy the ID and use it to update .clasp.json.
-
-https://script.google.com<font>/d/</font><font color=red>1RP...zGV</font>/edit
-
-```
-//.clasp.json
-
-{"scriptId":"1RP...zGV"} // Add the ID here
-```
 <h3>Push your local files to Google Drive.</h3>
 
 Run `clasp push` to send your changes to Google Drive (aka script.google.com).
