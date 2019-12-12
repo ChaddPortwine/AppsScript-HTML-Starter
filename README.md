@@ -54,7 +54,7 @@ Created version 1.
 ```
 <h3>Open the Web Page</h3>
 
-Run `clasp open --webapp` and select a deployment to open your web page in a browser.
+Run `clasp open --webapp` and use arrow keys to select the version you just created.
 
 ```
 clasp open --webapp
@@ -62,4 +62,4 @@ clasp open --webapp
 ❯                               @HEAD - AKf...h2S
 ```
 
-If everything worked, you should see the <b>Hello Apps Script!</b> welcom page.
+If everything worked, you should see the <b>Hello Apps Script!</b> welcome page.
