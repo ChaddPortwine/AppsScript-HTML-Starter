@@ -3,14 +3,20 @@
 
 Create and Host a website with Apps Script. Work locally using your favorite IDE. Use HTML, CSS, and JavaScript to design your pages. Use `clasp` to push your code files to Google Drive and to deploy your site to Google Cloud Platform.
 
-This project uses npm to install clasp. The clasp CLI lets you work on Apps Scripts locally and then push and deploy changes from your Terminal or IDE.
+This project uses npm to install clasp. The clasp CLI lets you work on Google Apps Scripts locally and then push and deploy changes from your Terminal or IDE.
+
+It is recommened you create a new repository using GitHub's <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template">template feature</a>. Your new repository will contain this project's files and folder structure, but you will have a fresh history of changes.   
 
 <h2>Instructions</h2>
 
-<h3>Clone the project and install clasp</h3>
+<h3>Create a new repository from a template</h3>
+
+Above the README and file list in this GitHub repository, click <b>Use this template</b>. Chose the settings that fit your needs.
+
+<h3>Clone your new repository and install clasp</h3>
 
 ```
-git clone git@github.com:ChaddPortwine/AppsScript-HTML-Starter
+git clone git@github.com:<YOUR_GITHUB>/<YOUR_REPO_NAME>
 cd AppsScript-HTML-Starter
 npm install
 ```
