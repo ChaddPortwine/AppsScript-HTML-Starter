@@ -42,13 +42,21 @@ clasp create --type webapp --title "AppsScript-HTML-Starter" --rootDir ./
 
 Run `clasp push` to send your changes to Google Drive (aka script.google.com).
 
+
 ```
 clasp push
+? Manifest file has been updated. Do you want to push and overwrite? (y/N)
+
+```
+Enter `y` to push and overwrite. Your local manifest file, `appsscript.json`, will configure your Apps Script project to run as a Web App that can host your website.
+
+```
 └─ Code.gs
 └─ appsscript.json
 └─ index.html
 Pushed 3 files.
 ```
+
 <h3>Deploy your app to Google Cloud Platform</h3>
 
 Run `clasp deploy` to deploy your app to GCP. Within your project, a new version is created and then published.
@@ -68,4 +76,53 @@ clasp open --webapp
 ❯                               @HEAD - AKf...h2S
 ```
 
-If everything worked, you should see the <b>Hello Apps Script!</b> welcome page.
+If everything worked, you should see the <b>Hello Apps Script!</b> welcome page in your browser.
+
+<h2>Make Changes to your Website</h2>
+<h3>Edit the index.html file.</h3>
+
+To make changes to your website, you will edit the `index.html`.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h1>Hello Apps Script!</h1>
+    <p>Here is a new line of text</p>
+  </body>
+</html>
+```
+<h3>Push and deploy your updated Website.</h3>
+
+Save your changes to index.html. Run `clasp push` to send your changes to Google Drive (aka script.google.com).
+
+```
+clasp push
+└─ Code.gs
+└─ appsscript.json
+└─ index.html
+Pushed 3 files.
+```
+Run `claps deploy` to deploy your app to GCP. Within your project, a new version is created and then published. 
+
+```
+clasp deploy
+Created version 2.
+- AZf...INv @2.
+```
+<h3>Open the Web Page</h3>
+
+Run `clasp open --webapp` and use arrow keys to select the version you just created.
+```
+clasp open --webapp
+? Open which deployment? (Use arrow keys)
+❯                               @HEAD - AKf...h2S
+❯                               @1 - AKf...h2S
+❯                               @2 - AZf...INv
+```
+If everything worked, you should see the <b>Hello Apps Script!</b> welcome page in your browser with the <b>new line of text</b>.
+
